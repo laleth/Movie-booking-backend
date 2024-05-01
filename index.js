@@ -13,13 +13,13 @@ const PORT = 5000
 
 app.use(express.json())
 app.use(cors({
-    origin: "http://localhost:3000", 
+    origin: "https://movie-booking-frontend-theta.vercel.app", 
     credentials: true,
   }))
 
 
 app.get('/',(req,res)=>{
-    res.send("Welcome to Daily Dress Color Suggestion")
+    res.send("Welcome to Movie tickets booking app")
 })
 
 app.use("/users",userRoute)
